@@ -161,10 +161,10 @@ CSS Output
 	@include keyframes(fadeIn) {
 	    from {
 	    @include transform(scale(0));
-	  }
+	    }
 	    to {
 	    @include transform(scale(1));
-	  }
+	    }
 	}
 
 
@@ -172,32 +172,40 @@ CSS Output
 
 
 	@-webkit-keyframes fadeIn {
-  from {
-    -webkit-transform: scale(0); }
+		from {
+    		-webkit-transform: scale(0);
+    	}
+		to {
+			-webkit-transform: scale(1);
+		}
+	}
 
-  to {
-    -webkit-transform: scale(1); } }
+	@-moz-keyframes fadeIn {
+		from {
+			-moz-transform: scale(0);
+		}
+		to {
+			-moz-transform: scale(1);
+		}
+	}
 
-@-moz-keyframes fadeIn {
-  from {
-    -moz-transform: scale(0); }
+	@-o-keyframes fadeIn {
+		from {
+    		-o-transform: scale(0);
+    	}
+		to {
+	    	-o-transform: scale(1);
+	    }
+	}
 
-  to {
-    -moz-transform: scale(1); } }
-
-@-o-keyframes fadeIn {
-  from {
-    -o-transform: scale(0); }
-
-  to {
-    -o-transform: scale(1); } }
-
-@keyframes fadeIn {
-  from {
-    transform: scale(0); }
-
-  to {
-    transform: scale(1); } }
+	@keyframes fadeIn {
+		from {
+    		transform: scale(0);
+    	}
+		to {
+    		transform: scale(1);
+    	}
+    }
 
 
 **Linear-gradient** - Gradijent pozicija je opcionalna. Moze biti izrazena u stepenima. Podrzava do 10 boja.
